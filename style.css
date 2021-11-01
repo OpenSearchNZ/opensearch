@@ -1,0 +1,21 @@
+body{
+    width: auto;
+    height: auto;
+    background-color:#0e1e30 ;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  
+}
+
+#body{
+  text-align:center;
+  font-family: helvetica;
+  color:#ceb07b;
+}
+
+.google{
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}

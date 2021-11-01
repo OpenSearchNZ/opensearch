@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>OpenSearch</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon" /> 
+  </head>
+
+	<body>
+    <div id="body">
+      <button style='background-color:#ceb07b; color:#0e1e30;' onclick="about()">About</button>
+      <script>
+        function about()
+        {
+          window.location.href = 'about.html'
+        }
+      </script>
+      <br>
+		<img src="logo.png" length="100" width="100"> <h1>OpenSearch</h1>
+    <br>
+  <style>
+      #searchbar{ 
+     text-align: center;
+     color: #0e1e30; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+ 
+   input[type=text] { 
+      width: 30%; 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+
+   input[type=text]:focus { 
+     width: 80%; 
+   } 
+ 
+  #list{ 
+    font-size:  1.5em;  
+    text-align: left;
+   } 
+ 
+.topics{ 
+   display: list-item;     
+  }  
+  a { 
+    color: #ceb07b 
+  }
+  </style>
+<script src="script.js"> 
+</script>
+  <input id="searchbar" onkeyup="search_topics()" type="text" name="search" placeholder="search..."
+ style="text=align: centre;" onclick="oncl()">
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://www.google.com"  id = "topics" >Google </a>
+   </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://docs.google.com" id = "topics" > Google Docs </a>
+ </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://sheets.google.com" id = "topics" > Google Sheets </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://slides.google.com" id = "topics" > Google Slides </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://forms.google.com" id = "topics" > Google Forms </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://sites.google.com" id = "topics" > Google Sites </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://drive.google.com" id = "topics" > Google Drive </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mail.google.com" id = "topics" > Gmail </a>
+   </li>
+ <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://apple.com" id = "topics" > Apple </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://microsoft.com" id = "topics" > Microsoft </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://whitbycollegiate.school.nz" id = "topics" > Whitby Collegiate </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://outlook.com" id = "topics" > Outlook </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://classroom.google.com" id = "topics" > Google Classroom </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://youtube.com" id = "topics" > Youtube </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://twitch.tv" id = "topics" > Twitch </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://discord.gg" id = "topics" > Discord </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://maps.google.com" id = "topics" > Google Maps </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://wikipedia.com" id = "topics" > Wikipedia </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://www.greatjourneysofnz.co.nz/" id = "topics" > The Great Journeys Of New Zealand </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://scratch.mit.edu" id = "topics" > Scratch </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://raspberrypi.org" id = "topics" > Raspberry Pi </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://lenovo.com" id = "topics" > Lenovo </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://hp.com" id = "topics" > HP </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://acer.com" id = "topics" > Acer </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://asus.com" id = "topics" > Asus </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://pbtech.co.nz" id = "topics" > PB Tech </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://dell.com" id = "topics" > Dell </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://toshiba.com" id = "topics" > Toshiba </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://coolermaster.com" id = "topics" > Cooler Master </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://steam.com" id = "topics" > Steam </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://sites.google.com/site/tyronesgameshack/" id = "topics" > Tyrone's Unblocked Games </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://minecraft.com" id = "topics" > Minecraft </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://theuselessweb.com" id = "topics" > The Useless Web </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://intel.com" id = "topics" > Intel </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://amd.com" id = "topics" > AMD </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://nvidia.com" id = "topics" > Nvidia </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://roblox.com" id = "topics" > Roblox </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://replit.com" id = "topics" > Replit </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://python.org" id = "topics" > Python </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://trademe.co.nz" id = "topics" > Trade Me </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://ebay.com" id = "topics" > Ebay </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://linusmediagroup.com" id = "topics" > Linus Media Group </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://aliexpress.com" id = "topics" > Ali Express </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://samsung.com" id = "topics" > Samsung </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mi.com" id = "topics" > Xiaomi </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://kogan.com" id = "topics" > Kogan </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://oppo.com" id = "topics" > Oppo </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://newegg.com" id = "topics" > Newegg </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://caelan4229.wixsite.com/ttwebos" id = "topics" > tT Web OS </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://kahoot.com" id = "topics" > Kahoot Create </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://kahoot.it" id = "topics" > Kahoot Join </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://1news.co.nz" id = "topics" > 1 News </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://tvnz.co.nz" id = "topics" > TVNZ </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://newshub.co.nz" id = "topics" > NewsHub </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://apple.news" id = "topics" > Apple News </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://casio.com" id = "topics" > Casio </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://kmart.com" id = "topics" > Kmart </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://thewarehouse.co.nz" id = "topics" > The Warehouse </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://spotify.com" id = "topics" > Spotify </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://edgelearning.co.nz" id = "topics" > Edge Learning </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://sites.google.com/whitbycollegiate.school.nz/whitby-tech/home" id = "topics" > Whitby Tech </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://weebly.com" id = "topics" > Weebly </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://wix.com" id = "topics" > Wix </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://wordpress.com" id = "topics" > Wordpress </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://rockshop.co.nz" id = "topics" > Rockshop </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mathsonline.com.au" id = "topics" > Mathsbuddy </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://epforlearning.com" id = "topics" > Education Perfect </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mozilla.org" id = "topics" > Mozilla </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://ttos.org" id = "topics" > Toy Train Operating Society </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://obsproject.com" id = "topics" > Open Broadcaster Software </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://meetedison.com" id = "topics" > Edison </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://skype.com" id = "topics" > Skype </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://adobe.com" id = "topics" > Adobe </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://openshot.org" id = "topics" > Open Shot </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://libreoffice.org" id = "topics" > Libre Office </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://samba.org" id = "topics" > Samba </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://nzceronline.org.nz" id = "topics" > NZCER Online </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://sites.google.com/view/max-search" id = "topics" > Max Search </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://debian.org" id = "topics" > Debian </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://manjaro.org" id = "topics" > Manjaro </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://ubuntu.com" id = "topics" > Ubuntu </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://linuxmint.com" id = "topics" > Linux Mint </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://zoom.com" id = "topics" > Zoom </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://meet.google.com" id = "topics" > Google Meet </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://icloud.com" id = "topics" > iCloud </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://govt.nz" id = "topics" > NZ Government </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://covid19.govt.nz" id = "topics" > Covid 19 NZ </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://pukeruabay.school.nz" id = "topics" > Pukerua Bay School</a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://blender.org" id = "topics" > Blender </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://vmware.com" id = "topics" > VMware </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://virtualbox.org" id = "topics" > Virtualbox </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://logitech.com" id = "topics" > Logitech </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mightyape.co.nz" id = "topics" > Mighty Ape </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://facebook.com" id = "topics" > Facebook </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://instagram.com" id = "topics" > Instagram </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://signal.com" id = "topics" > Signal </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://whatsapp.com" id = "topics" > Whats App </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://linkedin.com" id = "topics" > LinkedIn </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://songsterr.com" id = "topics" > Songsterr </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://music.youtube.com" id = "topics" > YouTube Music </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://emirates-team-new-zealand.americascup.com/" id = "topics" > Team New Zealand </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://americascup.com/" id = "topics" > America's Cup </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://lttstore.com/" id = "topics" > LTT Store </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://minecraft.com/" id = "topics" > Minecraft </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://codeacademy.com/" id = "topics" > Code Academy </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mathsisfun.com/" id = "topics" > Maths Is Fun </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://thebeatles.com/" id = "topics" > The Beatles </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://myshakespeare.com/" id = "topics" > My Shakespeare </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://cc.computercrunch.repl.co" id = "topics" > Computer Crunch Plus </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://codecademy.com/" id = "topics" > Codecademy </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://codecombat.com/" id = "topics" > Code Combat </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://drawings.google.com.com/" id = "topics" > Google Drawings </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://opera.com/" id = "topics" > Opera Browser </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://brave.com/" id = "topics" > Brave Browser </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://search.brave.com/" id = "topics" > Brave Search </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://duckduckgo.com/" id = "topics" > Duck Duck Go </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://bing.com/" id = "topics" > Microsoft Bing </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://msn.com/" id = "topics" > MSN </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://musescore.org/" id = "topics" > Musescore </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://noteflight.com/" id = "topics" > Noteflight </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://avg.com/" id = "topics" > AVG </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://totalav.com/" id = "topics" > Total AV </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mackeeper.com/" id = "topics" > MacKeeper </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://ecosia.org/" id = "topics" > Ecosia </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://earth.google.com/" id = "topics" > Google Earth </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://bbc.com/" id = "topics" > BBC </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://officemax.co.nz/" id = "topics" > Office Max </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://tradedepot.co.nz/" id = "topics" > Trade Depot </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://bunnings.co.nz/" id = "topics" > Bunnings </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://mitre10.co.nz/" id = "topics" > Mitre 10 </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://harveynorman.co.nz/" id = "topics" > Harvey Norman </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://noelleeming.co.nz/" id = "topics" > Noel Leeming </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://warehousestationary.co.nz/" id = "topics" > Warehouse Stationary </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://twitter.com/" id = "topics" > Twitter </a>
+  </li>
+<li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://tt-music.ttos.repl.co/" id = "topics" > tT Music </a>
+  </li>
+  <li class="topics"  id = "topics" style="text-align: centre" >
+   <a href="https://banqer.co/" id = "topics" > Banqer </a>
+  </li>
+<h2>Can't find what you are looking for? Search Google:</h2>
+<br>
+<div class="google">
+  <script async src="https://cse.google.com/cse.js?cx=89257375188b9fcfe"></script>
+<div class="gcse-searchbox-only"></div>
+</div>
+ </body>
+ <footer>
+   <h1>© Taylor Technology 2021</h1>
+ </footer>
+ </div>
+ </html>
